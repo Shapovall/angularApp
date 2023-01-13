@@ -1,0 +1,14 @@
+<div class="panel">
+    <a routerLink="/full-dashboard/active-chart" routerLinkActive="btn--active" class="btn">Active chart</a>
+    <a routerLink="/full-dashboard/selling-chart" routerLinkActive="btn--active"  class="btn">Selling chart</a>
+</div>
+<hr>
+<p>Value from active chart: {{valueFromActiveChart}}</p>
+
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
+<active-chart [myArray]="arr" (changedValue)="handleValue($event)"></active-chart>
+<selling-chart [myStr]="str"></selling-chart>
+

@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    background-color:aquamarine
+}
+
+button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+

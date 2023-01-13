@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.alert {
+    display: flex;
+    border-radius: 5px;
+    &--error {
+        background-color: red;
+        color: white;
+    }
+
+    &--success {
+        background-color: green;
+        color: black;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
