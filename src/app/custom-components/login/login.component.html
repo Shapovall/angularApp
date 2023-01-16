@@ -1,1 +1,28 @@
 <p>login works!</p>
+<hr>
+<p>*ngIf=""</p>
+<button (click)="toggleDiv()">Toggle</button>
+<div *ngIf="toggle">
+    {{str}}
+</div>
+<hr>
+<p>*ngFor=""</p>
+<ul>
+    <li *ngFor="let student of students">{{student.fio}} {{student.age}}</li>
+</ul>
+<hr>
+<p>*ngSwitch=""</p>
+<div [ngSwitch]="person">
+    <!-- the same view can be shown in more than one case -->
+    <div *ngSwitchCase="'Ivanov'">25</div>
+    <div *ngSwitchCase="'Petrov'">20</div>
+    <div *ngSwitchCase="'Sidorov'">15</div>
+</div>
+<hr>
+<p>*ngClass=""</p>
+<button (click)="toggleDiv()" [ngClass]="{'red': toggle, 'blue': !toggle}">Toggle</button>
+<button (click)="toggleDiv()" [ngClass]="toggle? 'red' : 'blue'">Toggle</button>
+<hr>
+<p>*ngStyle=""</p>
+<button (click)="toggleDiv()" [ngStyle]="{'width': '100px', 'height': '50px'}">Toggle</button>
+

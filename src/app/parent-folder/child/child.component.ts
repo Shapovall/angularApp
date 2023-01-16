@@ -25,7 +25,6 @@ export class ChildComponent implements OnInit {
   }
 
   createMsg(): void {
-
     const str = 'Blablabla from child';
     this.msgFromChild.next(str);
   }
