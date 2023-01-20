@@ -30,4 +30,8 @@ export class SpaSidebarComponent implements OnInit {
     this.router.navigate(['parent']);
   }
 
+  goToHideAndShow(): void{
+    this.router.navigate(['hide-and-show']);
+  }
+
 }

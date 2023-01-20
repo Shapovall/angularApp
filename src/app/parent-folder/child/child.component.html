@@ -1,5 +1,9 @@
-<p>We got id from URL: {{idFromUrl}}</p>
-<p>We got fio fromURL: {{fio}}</p>
+<p>id from URL: {{idFromUrl}}</p>
+<p>fio fromURL: {{fio}}</p>
 <p>============================================</p>
-<p>We got id from parent: {{idFromParent}}</p>
+<p>id from parent: {{idFromParent}}</p>
 <button (click)="createMsg()">Create msg</button>
+
+<hr>
+
+<second-child [idFromChild]="id" (msgFromSecondChild)="handleMsg($event)"></second-child>

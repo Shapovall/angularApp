@@ -5,4 +5,8 @@
 <router-outlet></router-outlet>
 <hr>
 
-<app-child [idFromParent]="id" (msgFromChild)="handleMsg($event)"></app-child>
+<child [idFromParent]="id" (msgFromChild)="handleMsg($event)"></child>
+
+<hr>
+
+<second-child [idFromChild]="id" (msgFromSecondChild)="handleMsg($event)"></second-child>

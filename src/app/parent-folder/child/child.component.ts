@@ -2,7 +2,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-child',
+  selector: 'child',
   templateUrl: './child.component.html',
   styleUrls: ['./child.component.scss']
 })
@@ -10,6 +10,8 @@ export class ChildComponent implements OnInit {
 
   idFromUrl: number;
   fio: string;
+  msg: string;
+  id = 5665;
 
   @Input() idFromParent: number;
 
@@ -27,6 +29,10 @@ export class ChildComponent implements OnInit {
   createMsg(): void {
     const str = 'Blablabla from child';
     this.msgFromChild.next(str);
+  }
+
+  handleMsg(msg: string): void {
+    this.msg = msg;
   }
 
 }

@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './custom-components/login/login.component';
 import { RegisterComponent } from './custom-components/register/register.component';
 import { SpaModule } from 'SPA/spa.module';
+import { HideAndShowComponent } from './custom-components/hide-and-show/hide-and-show.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    HideAndShowComponent,
   ],
   imports: [
     SpaModule,
