@@ -8,6 +8,7 @@ import { LoginComponent } from './custom-components/login/login.component';
 import { RegisterComponent } from './custom-components/register/register.component';
 import { SpaModule } from 'SPA/spa.module';
 import { HideAndShowComponent } from './custom-components/hide-and-show/hide-and-show.component';
+import { CardComponent } from './custom-components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { HideAndShowComponent } from './custom-components/hide-and-show/hide-and
     LoginComponent,
     RegisterComponent,
     HideAndShowComponent,
+    CardComponent,
   ],
   imports: [
     SpaModule,

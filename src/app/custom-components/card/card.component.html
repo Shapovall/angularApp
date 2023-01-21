@@ -1,0 +1,12 @@
+<div class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
+    <div class="header">
+        <p *ngIf="headerString">{{headerString}}</p>
+    </div>
+    <div class="body">
+        <p *ngIf="bodyString && !cardArray">{{getBodyString}}</p>
+        <ul *ngIf="cardArray && !bodyString">
+            <li *ngFor="let item of cardArray">{{item.name}} : {{item.price}}</li>
+        </ul>
+        <p *ngIf="!bodyString && !cardArray">Sorry.</p>
+    </div>
+</div>

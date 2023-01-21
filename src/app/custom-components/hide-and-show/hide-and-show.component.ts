@@ -1,9 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Product } from '../product.interface';
 
-interface Product{
-  name: string;
-  price: number;
-}
 
 @Component({
   selector: 'hide-and-show',

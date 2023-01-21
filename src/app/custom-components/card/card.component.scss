@@ -1,0 +1,29 @@
+.task1{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    
+    &--double{
+        width: 400px;
+    }
+
+    &--un-double{
+        width: 150px;
+    }
+
+    .header{
+        width: 100%;
+        background-color: aqua;
+        text-align: center;
+    }
+
+    .body{
+        width: 100%;
+        background-color: burlywood;
+        justify-content: center;
+        p{
+            text-align: justify;
+        }
+    }
+}

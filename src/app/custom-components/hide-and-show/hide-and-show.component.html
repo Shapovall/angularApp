@@ -2,17 +2,31 @@
 <button type="button" (click)="changeSizeTwo()">Click me for change size to small!</button>
 
 <p>TASK first</p>
-<div *ngIf="show" class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
+
+<card *ngIf="show" 
+[headerString]="'продам помед'" 
+[bodyString]="'100ГРН. - 0975323423'"
+[double] = "double"
+[undouble] = "undouble"
+></card>
+
+<!-- <div *ngIf="show" class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
     <div class="header">
         <p>продам мопед</p>
     </div>
     <div class="body">
         <p>100ГРН. телефон - 0979464232</p>
     </div>
-</div>
+</div> -->
 
 <p>TASK second</p>
-<div class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
+<card *ngIf="show" 
+[headerString]="'menu'" 
+[bodyArray]="menu"
+[double] = "double"
+[undouble] = "undouble"
+></card>
+<!-- <div class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
     <div class="header">
         <p>menu</p>
     </div>
@@ -21,17 +35,23 @@
             <li *ngFor="let Product of menu">{{Product.name}} : {{Product.price}}</li>
         </ul>
     </div>
-</div>
+</div> -->
 
 <p>TASK third</p>
-<div class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
+<card *ngIf="show" 
+[mainTitle]="'advertise'" 
+[bodyArray]="productNow"
+[double] = "double"
+[undouble] = "undouble"
+></card>
+<!-- <div class="task1" [ngClass]="{'task1--double': double, 'task1--un-double': undouble}">
     <div class="header">
         <p>advertise</p>
     </div>
     <div class="body">
         {{productNow.name}} : {{productNow.price}}
     </div>
-</div>
+</div> -->
 
 <div class="task2" [ngStyle]="{'background-color': 'white'}">
     <p>Hello!</p>
