@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { ChildComponent } from "./child/child.component";
 import { ParentFolderRoutingModule } from "./parent-folder-routing.module";
@@ -11,6 +12,7 @@ import { SecondChildComponent } from "./second-child/second-child.component";
         SecondChildComponent
     ],
     imports: [
+        CommonModule,
         ParentFolderRoutingModule,
     ],
     providers: [],

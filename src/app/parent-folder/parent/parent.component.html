@@ -1,6 +1,10 @@
 <p>parent works!</p>
 
-<p>Msg from child:{{msg}} </p>
+<div *ngIf="msg">{{msg}}</div>
+
+<second-child> </second-child>
+
+<!-- <p>Msg from child:{{msg}} </p>
 
 <router-outlet></router-outlet>
 <hr>
@@ -9,4 +13,4 @@
 
 <hr>
 
-<second-child [idFromChild]="id" (msgFromSecondChild)="handleMsg($event)"></second-child>
+<second-child [idFromChild]="id" (msgFromSecondChild)="handleMsg($event)"></second-child> -->
